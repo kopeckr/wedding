@@ -1,0 +1,72 @@
+/* css reset + global styles */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* ================================== */
+body {
+  background-color: rgb(239, 215, 219);
+}
+
+.container {
+  display: flex;
+}
+
+.container__bigger {
+  margin: 10px 5%;
+  width: 90%;
+  min-width: 300px;
+  height: 700px;
+  background: white;
+  border: white solid 2px;
+  clip-path: polygon(
+    10% 10%,
+    90% 10%,
+    100% 20%,
+    100% 80%,
+    90% 90%,
+    10% 90%,
+    0% 80%,
+    0% 20%
+  );
+}
+
+.container__smaller {
+  justify-content: center;
+  margin: 0;
+  min-width: 296px;
+  height: 696px;
+  background: rgb(239, 215, 219);
+  clip-path: polygon(
+    10% 10%,
+    90% 10%,
+    100% 20%,
+    100% 80%,
+    90% 90%,
+    10% 90%,
+    0% 80%,
+    0% 20%
+  );
+}
