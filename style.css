@@ -25,18 +25,111 @@ ol {
   list-style: none;
 }
 
+a {
+  font-family: Great Vibes;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
 /* ================================== */
 
 body {
-  background-color: rgb(241, 241, 241);
+  /* background-color: rgb(250, 250, 250); */
+  /* background-color: rgb(246, 245, 239); */
+  background-color: white;
+}
+
+.main {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.main__logo {
+  width: 30%;
+  display: block;
+  margin: 10px auto;
+}
+
+.main__welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__welcome-lang {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px;
+}
+
+.main__welcome--lang-choice {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.main__lang-choice,
+.main__welcome-cz,
+.main__welcome-fr {
+  font-family: Great Vibes;
+  font-size: 30px;
+}
+
+.main__welcome-fr {
+  color: rgba(188, 133, 81, 253);
+}
+
+.main__lang-choice {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .main__lang-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.main__lang-choice--fr a {
+  color: rgba(188, 133, 81, 253);
+}
+
+.main__lang-choice--fr,
+.main__lang-choice--cz {
+  padding: 10px;
+}
+
+@media (min-width: 769px) {
+  .main__logo {
+    width: 30%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .main__welcome {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  /* .main__lang-choice {
+    flex-direction: row;
+    justify-content: space-around;
+  } */
 }
 
 /* ================ header ================ */
 .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   text-align: center;
   background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(117, 140, 120);
+  border-top: 1px solid rgb(117, 140, 120);
 }
 
 .menu li {
@@ -49,6 +142,17 @@ body {
   color: black;
   text-decoration: none;
   padding: 20px 30px;
+}
+
+.menu__logo {
+  width: 100px;
+}
+
+.menu .menu__lang {
+  /* display: inline-block; */
+  /* padding-top: 10px; */
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .leaves {
@@ -89,7 +193,7 @@ body {
   margin: 0;
   min-width: 296px;
   height: 696px;
-  background: rgb(241, 241, 241);
+  background: white;
   clip-path: polygon(
     2% 0%,
     97% -2%,
