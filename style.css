@@ -25,6 +25,14 @@ ol {
   list-style: none;
 }
 
+/* ================================================ */
+
+body {
+  /* background-color: rgb(250, 250, 250); */
+  /* background-color: rgb(246, 245, 239); */
+  background-color: white;
+}
+
 a {
   font-family: Great Vibes;
   text-decoration: none;
@@ -32,13 +40,27 @@ a {
   color: black;
 }
 
-/* ================================== */
-
-body {
-  /* background-color: rgb(250, 250, 250); */
-  /* background-color: rgb(246, 245, 239); */
-  background-color: white;
+a:hover {
+  text-decoration: underline;
 }
+
+.golden-line-top {
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(188, 133, 81, 253);
+}
+
+.golden-line-bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgba(188, 133, 81, 253);
+}
+
+/* .leaves {
+  background-image: url(img/tree.png);
+  height: 60px;
+  background-repeat: repeat-x;
+  background-size: 200px;
+  margin-top: 10px;
+} */
 
 .main {
   width: 90%;
@@ -48,7 +70,7 @@ body {
 .main__logo {
   width: 30%;
   display: block;
-  margin: 10px auto;
+  margin: 30px auto;
 }
 
 .main__welcome {
@@ -59,10 +81,16 @@ body {
 
 .main__welcome-lang {
   width: 50%;
+  /* max-width: 250px; */
   text-align: center;
   display: flex;
   flex-direction: column;
+  /* height: 450px; */
+  justify-content: space-around;
+  /* upravit height */
+
   margin: 20px 50px;
+  margin-bottom: 0;
 }
 
 .main__welcome--lang-choice {
@@ -70,47 +98,90 @@ body {
   padding-top: 10px;
 }
 
-.main__lang-choice,
 .main__welcome-cz,
 .main__welcome-fr {
   font-family: Great Vibes;
   font-size: 30px;
+  /* padding-bottom: 25px; */
+}
+
+.main__lang-choice {
+  font-family: Great Vibes;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main__welcome-fr {
   color: rgba(188, 133, 81, 253);
 }
-
-.main__lang-choice {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* .main__lang-choice {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .main__lang-choice--fr a {
   color: rgba(188, 133, 81, 253);
 }
 
-.main__lang-choice--fr,
+/* .main__lang-choice--fr,
 .main__lang-choice--cz {
-  padding: 10px;
+  padding: 10px 50px;
+  background-image: url('img/tree.png');
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position-x: -22px;
+  background-position-y: 20px;
+} */
+
+.main__lang-choice--cz {
+  padding: 10px 50px;
+  background-image: url('img/tree.png'), url('img/tree.png');
+  background-size: 80px;
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: -25px, 114px;
+  background-position-y: 20px;
+}
+
+.main__lang-choice--fr {
+  padding: 10px 50px;
+  background-image: url('img/tree.png'), url('img/tree.png');
+  background-size: 80px;
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: -25px, 132px;
+  background-position-y: 20px;
 }
 
 @media (min-width: 769px) {
+  .main {
+    height: 88.5vh;
+  }
+
   .main__logo {
-    width: 30%;
+    width: 25%;
+    max-width: 275px;
     display: block;
-    margin: 10px auto;
+    margin: 30px auto;
   }
 
   .main__welcome {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
+    height: 10vh;
+    width: 90vw;
+  }
+
+  .main__welcome-lang {
+    justify-content: space-between;
+    width: 400px;
+    height: 330px;
+  }
+
+  /* .main__welcome-cz {
+    padding-bottom: 65px;
+  } */
+
+  .main__lang-choice {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   /* .main__lang-choice {
@@ -119,7 +190,7 @@ body {
   } */
 }
 
-/* ================ header ================ */
+/* ================ menu ================ */
 .menu {
   display: flex;
   justify-content: center;
@@ -153,14 +224,6 @@ body {
   /* padding-top: 10px; */
   padding-bottom: 0;
   padding-top: 0;
-}
-
-.leaves {
-  background-image: url(img/tree.png);
-  height: 60px;
-  background-repeat: repeat-x;
-  background-size: 200px;
-  margin-top: 10px;
 }
 
 /* ============== main section ============= */
@@ -223,3 +286,33 @@ body {
     0% 5%
   );
 } */
+
+.couple-photo {
+  /* width: 50%; */
+  /* height: 50%;  */
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+/* .couple-photo {
+  padding: 50%;
+  background-image: url('img/photo.jpg');
+  background-repeat: no-repeat;
+  background-size: 70vh;
+  object-fit: cover;
+} */
+
+.couple-photo__container {
+  position: relative;
+}
+
+.couple-photo__text {
+  flex-direction: column;
+  color: white;
+  font-family: Great Vibes;
+  position: relative;
+  left: -300px;
+  bottom: -430px;
+  padding: 5px;
+  width: 500px;
+}
