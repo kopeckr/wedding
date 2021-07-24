@@ -25,6 +25,10 @@ ol {
   list-style: none;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* ================================================ */
 
 body {
@@ -198,67 +202,6 @@ a:hover {
   width: 130px;
 }
 
-/* ============== main section ============= */
-.container {
-  display: flex;
-}
-
-.container__bigger {
-  margin: 2%;
-  width: 100%;
-  height: 700px;
-
-  min-width: 300px;
-  background: rgba(188, 133, 81, 253);
-  border: rgba(188, 133, 81, 253) solid 2px;
-  clip-path: polygon(
-    2% 0%,
-    97% -2%,
-    100% 4%,
-    100% 96%,
-    98% 100%,
-    2% 100%,
-    0% 96%,
-    0% 4%
-  );
-}
-
-.container__smaller {
-  justify-content: center;
-  margin: 0;
-  min-width: 296px;
-  height: 696px;
-  background: white;
-  clip-path: polygon(
-    2% 0%,
-    97% -2%,
-    100% 4%,
-    100% 96%,
-    98% 100%,
-    2% 100%,
-    0% 96%,
-    0% 4%
-  );
-}
-
-/* .container__smaller {
-      justify-content: center;
-      margin: 0;
-      min-width: 296px;
-      height: 696px;
-      background: rgb(239, 215, 219);
-      clip-path: polygon(
-        5% 0%,
-        97% 0%,
-        100% 5%,
-        100% 97%,
-        97% 100%,
-        5% 100%,
-        0% 97%,
-        0% 5%
-        );
-      } */
-
 /* ========== homepage container ============== */
 
 .container__couple {
@@ -279,6 +222,19 @@ a:hover {
 .container__couple-text {
   position: absolute;
   bottom: 5vw;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-family: Great Vibes;
+  font-size: 8vw;
+  text-align: center;
+}
+
+.container__couple-text-fr {
+  position: absolute;
+  bottom: 1vw;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -316,7 +272,6 @@ a:hover {
 .announcement__info {
   margin-left: auto;
   margin-right: auto;
-  /* font-family: Bilbo Swash Caps; */
   font-family: Great Vibes;
   font-size: 5vw;
   margin-bottom: 15px;
@@ -327,7 +282,7 @@ a:hover {
 .timeline {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -349,6 +304,44 @@ a:hover {
   margin: 10px;
   font-family: Great Vibes;
   font-size: 27px;
+}
+
+/* ================ news ============== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__news {
+  border: 1px solid rgba(188, 133, 81, 253);
+  padding: 15px;
+  margin: 15px;
+  margin-bottom: 0;
+}
+
+.container__news-text {
+  min-width: 340px;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+.container__news-headline {
+  font-size: 30px;
+  font-family: Great Vibes;
+  font-weight: normal;
+}
+
+.container__news-link {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: Great Vibes;
+  font-size: 50px;
 }
 
 @media (min-width: 542px) {
@@ -420,9 +413,10 @@ a:hover {
     height: 83vh;
   }
 
-  .container__couple-text {
+  .container__couple-text,
+  .container__couple-text-fr {
     font-size: 3vw;
-    bottom: 2vw;
+    bottom: 3vw;
   }
 
   .container__announcement {
@@ -434,11 +428,17 @@ a:hover {
   .announcement__info {
     font-size: 2.5vw;
     margin: 15px;
-    /* color: rgb(123, 144, 126); */
     color: black;
   }
 
   .timeline__title {
     text-align: center;
+  }
+
+  .container {
+    justify-content: center;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
