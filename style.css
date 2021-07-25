@@ -174,7 +174,8 @@ a:hover {
 .navbar__menu {
   position: fixed;
   right: -100%;
-  top: 65px;
+  /* top: 65px; */
+  top: 11%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -282,9 +283,10 @@ a:hover {
 .timeline {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
 }
 
 .timeline__title {
@@ -318,10 +320,12 @@ a:hover {
   padding: 15px;
   margin: 15px;
   margin-bottom: 0;
+  width: 320px;
+  padding: 10px;
 }
 
 .container__news-text {
-  min-width: 340px;
+  /* min-width: 340px; */
   height: auto;
   padding-bottom: 5px;
 }
