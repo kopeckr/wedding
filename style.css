@@ -283,7 +283,7 @@ a:hover {
 .timeline {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 325px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -321,7 +321,7 @@ a:hover {
   margin: 15px;
   margin-bottom: 0;
   /* width: 320px; */
-  width: 70vw;
+  width: 85vw;
   padding: 10px;
 }
 
@@ -399,7 +399,8 @@ a:hover {
   }
 
   .menu__link {
-    margin: 0 20px;
+    /* margin: 0 20px; */
+    margin: 0 1vw;
   }
 
   .navbar__hamburger {
