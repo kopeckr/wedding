@@ -26,7 +26,8 @@ ol {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
 }
 
 /* ================================================ */
@@ -320,13 +321,11 @@ a:hover {
   padding: 15px;
   margin: 15px;
   margin-bottom: 0;
-  /* width: 320px; */
   width: 85vw;
   padding: 10px;
 }
 
 .container__news-text {
-  /* min-width: 340px; */
   height: auto;
   padding-bottom: 5px;
 }
@@ -338,7 +337,8 @@ a:hover {
 }
 
 .container__news-link {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
 }
 
 .coming-soon {
